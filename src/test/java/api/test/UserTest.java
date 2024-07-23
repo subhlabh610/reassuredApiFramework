@@ -9,7 +9,6 @@ import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
 import java.util.Arrays;
 import java.util.List;
 import static io.restassured.RestAssured.*;
@@ -101,6 +100,13 @@ public class UserTest {
                 "    \"name\": \"Test Person\",\n" +
                 "    \"height\": \"180\"\n" +
                 "}");
+        res.then().log().all();
+        Assert.assertEquals(res.getStatusCode(), 404);
+    }
+
+    @Test(priority = 4)
+    public void testPlanetdelete() {
+        Response res = UserEndPoints.deletePlanetsDetails("14");
         res.then().log().all();
         Assert.assertEquals(res.getStatusCode(), 404);
     }

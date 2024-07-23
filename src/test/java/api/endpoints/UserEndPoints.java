@@ -78,13 +78,21 @@ public class UserEndPoints {
         return response;
     }
 
+    public static Response deletePlanetsDetails(String planet){
+        Response response = given()
+                .pathParam("planets",planet)
+                .when()
+                .delete(Routes.deletePlanetDetailsUrl);
+        return response;
+    }
+
+
     public static Response getPlatedDetails(String planet){
         Response response =
                 given()
                         .pathParam("planets",planet)
                         .when()
                         .get(Routes.planetsGetUrl);
-
         return response;
     }
 

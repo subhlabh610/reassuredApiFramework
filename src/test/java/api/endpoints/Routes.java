@@ -14,6 +14,8 @@ public class Routes {
     public static String homeworldGetUrl=baseUri+"/homeworld/{homeworld}";
     public static String postPlanetUrl=baseUri+"/planet/";
 
+    public static String deletePlanetDetailsUrl=baseUri+"/planet/{planets}";
+
 
 
 
