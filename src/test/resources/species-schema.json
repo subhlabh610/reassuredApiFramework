@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Species",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the species."
+    },
+    "classification": {
+      "type": "string",
+      "description": "The classification of the species."
+    },
+    "designation": {
+      "type": "string",
+      "description": "The designation of the species."
+    },
+    "average_height": {
+      "type": "string",
+      "description": "The average height of the species in centimeters."
+    },
+    "skin_colors": {
+      "type": "string",
+      "description": "Comma-separated list of skin colors for the species."
+    },
+    "hair_colors": {
+      "type": "string",
+      "description": "Comma-separated list of hair colors for the species."
+    },
+    "eye_colors": {
+      "type": "string",
+      "description": "Comma-separated list of eye colors for the species."
+    },
+    "average_lifespan": {
+      "type": "string",
+      "description": "The average lifespan of the species in years."
+    },
+    "homeworld": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the homeworld of the species."
+    },
+    "language": {
+      "type": "string",
+      "description": "The language spoken by the species."
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the people of this species."
+      }
+    },
+    "films": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the films in which the species appears."
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the species was created in the database."
+    },
+    "edited": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the species was last edited in the database."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL of the species resource."
+    }
+  },
+  "required": [
+    "name",
+    "classification",
+    "designation",
+    "average_height",
+    "skin_colors",
+    "hair_colors",
+    "eye_colors",
+    "average_lifespan",
+    "homeworld",
+    "language",
+    "people",
+    "films",
+    "created",
+    "edited",
+    "url"
+  ]
+}

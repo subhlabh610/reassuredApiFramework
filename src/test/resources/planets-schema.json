@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Planet",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the planet."
+    },
+    "rotation_period": {
+      "type": "string",
+      "description": "The number of hours it takes for the planet to complete one rotation."
+    },
+    "orbital_period": {
+      "type": "string",
+      "description": "The number of days it takes for the planet to complete one orbit around the Sun."
+    },
+    "diameter": {
+      "type": "string",
+      "description": "The diameter of the planet in kilometers."
+    },
+    "climate": {
+      "type": "string",
+      "description": "The climate of the planet."
+    },
+    "gravity": {
+      "type": "string",
+      "description": "The gravity of the planet."
+    },
+    "terrain": {
+      "type": "string",
+      "description": "The terrain of the planet."
+    },
+    "surface_water": {
+      "type": "string",
+      "description": "The percentage of the planet's surface that is covered in water."
+    },
+    "population": {
+      "type": "string",
+      "description": "The population of the planet."
+    },
+    "residents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the residents of the planet."
+      }
+    },
+    "films": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the films in which the planet appears."
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the planet was created in the database."
+    },
+    "edited": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the planet was last edited in the database."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL of the planet resource."
+    }
+  }
+}

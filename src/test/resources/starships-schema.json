@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Starship",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the starship."
+    },
+    "model": {
+      "type": "string",
+      "description": "The model of the starship."
+    },
+    "manufacturer": {
+      "type": "string",
+      "description": "The manufacturer of the starship."
+    },
+    "cost_in_credits": {
+      "type": "string",
+      "description": "The cost of the starship in credits."
+    },
+    "length": {
+      "type": "string",
+      "description": "The length of the starship in meters."
+    },
+    "max_atmosphering_speed": {
+      "type": "string",
+      "description": "The maximum speed of the starship in the atmosphere."
+    },
+    "crew": {
+      "type": "string",
+      "description": "The number of crew members required to operate the starship."
+    },
+    "passengers": {
+      "type": "string",
+      "description": "The number of passengers that the starship can carry."
+    },
+    "cargo_capacity": {
+      "type": "string",
+      "description": "The cargo capacity of the starship in kilograms."
+    },
+    "consumables": {
+      "type": "string",
+      "description": "The length of time that the starship’s consumables (food, water, etc.) last."
+    },
+    "hyperdrive_rating": {
+      "type": "string",
+      "description": "The starship’s hyperspace jump rating."
+    },
+    "MGLT": {
+      "type": "string",
+      "description": "The MGLT (Molecular Gas Laminate Thrusters) rating of the starship."
+    },
+    "starship_class": {
+      "type": "string",
+      "description": "The class of the starship."
+    },
+    "pilots": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the pilots of the starship."
+      }
+    },
+    "films": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the films in which the starship appears."
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the starship was created in the database."
+    },
+    "edited": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the starship was last edited in the database."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL of the starship resource."
+    }
+  },
+  "required": [
+    "name",
+    "model",
+    "manufacturer",
+    "cost_in_credits",
+    "length",
+    "max_atmosphering_speed",
+    "crew",
+    "passengers",
+    "cargo_capacity",
+    "consumables",
+    "hyperdrive_rating",
+    "MGLT",
+    "starship_class",
+    "pilots",
+    "films",
+    "created",
+    "edited",
+    "url"
+  ]
+}

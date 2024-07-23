@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the person."
+    },
+    "height": {
+      "type": "string",
+      "description": "The height of the person in centimeters."
+    },
+    "mass": {
+      "type": "string",
+      "description": "The mass of the person in kilograms."
+    },
+    "hair_color": {
+      "type": "string",
+      "description": "The hair color of the person."
+    },
+    "skin_color": {
+      "type": "string",
+      "description": "The skin color of the person."
+    },
+    "eye_color": {
+      "type": "string",
+      "description": "The eye color of the person."
+    },
+    "birth_year": {
+      "type": "string",
+      "description": "The birth year of the person in Galactic Standard Years."
+    },
+    "gender": {
+      "type": "string",
+      "description": "The gender of the person."
+    },
+    "homeworld": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the homeworld of the person."
+    },
+    "films": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the films in which the person appears."
+      }
+    },
+    "species": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the species to which the person belongs."
+      }
+    },
+    "vehicles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the vehicles used by the person."
+      }
+    },
+    "starships": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "URLs to the starships used by the person."
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the person was created in the database."
+    },
+    "edited": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the person was last edited in the database."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "The URL of the person resource."
+    }
+  },
+  "required": [
+    "name",
+    "height",
+    "mass",
+    "hair_color",
+    "skin_color",
+    "eye_color",
+    "birth_year",
+    "gender",
+    "homeworld",
+    "films",
+    "species",
+    "vehicles",
+    "starships",
+    "created",
+    "edited",
+    "url"
+  ]
+}
